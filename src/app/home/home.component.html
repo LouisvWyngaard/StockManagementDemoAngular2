@@ -1,0 +1,16 @@
+<header>Home</header>
+
+<input type="text" [(ngModel)]="searchTerm">
+
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let item of listOfCars | filter: searchTerm">
+            <DIV class="container" href="">
+                <div>make: {{item.make}}</div>
+                <div>model: {{item.model}}</div>
+            </DIV>
+            
+
+        </div>
+    </div>
+</div>
